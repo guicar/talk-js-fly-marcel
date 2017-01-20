@@ -32,7 +32,91 @@
           <p>Fly Marcel &amp; Guillaume Claret</p>
         </section>
         <section>
+          <h2>Mutation testing</h2>
+          <ul>
+            <li>méthode pour tester les tests</li>
+            <li class="fragment">on génère un <em>commit</em> aléatoire</li>
+            <li class="fragment">on regarde si les tests détectent un problème</li>
+            <li class="fragment">si non, un <em>bug</em> est peut-être passé inaperçu</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Génération des <em>commits</em></h2>
+          <div class="fragment">
+            <p>Avec un singe savant.</p>
+            <img src="img/singe-savant.jpeg" alt="Singe savant" />
+          </div>
+          <p class="fragment">Chez nous : Fly Marcel</p>
+        </section>
+        <section>
+          <h2>Exemples de <em>commit</em></h2>
+          <ul>
+            <li class="fragment">suppression d'une ligne</li>
+            <li class="fragment">suppression d'un caractère</li>
+            <li class="fragment">changement de <em>wording</em></li>
+            <li class="fragment">
+              <p>changements vicieux :</p>
+              <img src="img/mutation.png" alt="mutation" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>On lance nos tests</h2>
+          <ul>
+            <li class="fragment">tests unitaires</li>
+            <li class="fragment">typage</li>
+            <li class="fragment">tests d'intégration, ...</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Résultats</h2>
+          <p class="fragment">Si les tests sont invalides :</p>
+          <ul>
+            <li class="fragment">
+              <p>victoire, le <em>bug</em> a été détecté !</p>
+              <img src="https://media.giphy.com/media/l0HlRhhKM7qKFGbGE/giphy.gif" alt="" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Résultats</h2>
+          <p class="fragment">Si les tests sont valides :</p>
+          <ul>
+            <li class="fragment">
+              <p>soit le <em>commit</em> n'était pas un <em>bug</em> (chance)</p>
+              <img src="http://cdn2.vox-cdn.com/assets/4256615/jumpire-slo-mo.gif" alt="" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Résultats</h2>
+          <p>Si les tests sont valides :</p>
+          <ul>
+            <li>
+              <p>soit les tests sont incomplets</p>
+              <img src="https://media.giphy.com/media/EFXGvbDPhLoWs/giphy.gif" alt="" />
+            </li>
+          </ul>
+          <p class="fragment">Piste pour mieux blinder ses tests !</p>
+        </section>
+        <section>
           <h2>Démo</h2>
+        </section>
+        <section>
+          <h2>Difficultés</h2>
+          <ul>
+            <li class="fragment">lent</li>
+            <li class="fragment">faux positifs</li>
+            <li class="fragment">peu d'outils disponibles</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Alternative</h2>
+          <p class="fragment">Détection de couverture en pourcentage de lignes.</p>
+          <ul>
+            <li class="fragment">plus rapide</li>
+            <li class="fragment">mais moins précis</li>
+          </ul>
         </section>
         <section>
           <h1>Merci.</h1>
